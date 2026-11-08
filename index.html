@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AJIS Learning Solutions empowers learners, educators, families, and communities with inclusive, innovative educational expertise and meaningful learning experiences."
+    />
+    <title>AJIS Learning Solutions | Igniting Minds, Empowering Futures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="AJIS Learning Solutions home">
+          <span class="brand-text">
+            <strong>AJIS Learning</strong>
+            <span>Solutions</span>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="founder.html">Founder</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="#consultation">Book a Consultation</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main class="page-shell" id="main-content">
+      <section class="page-hero home-hero">
+        <div class="container">
+          <div class="hero-content reveal">
+            <span class="eyebrow">Educational expertise, with purpose</span>
+            <h1>
+              Igniting <span class="highlight">Minds.</span><br />
+              Empowering <span class="highlight">Futures.</span>
+            </h1>
+            <p class="hero-copy">
+              AJIS Learning Solutions empowers learners, educators, families, and communities
+              through inclusive learning, educational consultancy, curriculum development, and
+              professional support.
+            </p>
+            <ul class="hero-benefits">
+              <li>Inclusive Learning Experiences</li>
+              <li>Expert Educational Consultancy</li>
+              <li>Curriculum and Learning Design</li>
+              <li>Professional Development and Learner Support</li>
+            </ul>
+            <div class="btn-row">
+              <a href="#consultation" class="btn btn-primary">Book a Consultation</a>
+              <a href="services.html" class="btn btn-secondary">Explore Our Services</a>
+            </div>
+          </div>
+
+          <div class="consultation-card reveal" id="consultation">
+            <div class="consultation-heading">
+              <span class="eyebrow">Start a conversation</span>
+              <h2>Book Your Consultation</h2>
+              <p>Tell us how we may be able to support your learning goals.</p>
+            </div>
+            <form class="consultation-form">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="consult-name">Full Name</label>
+                  <input id="consult-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="consult-email">Email Address</label>
+                  <input id="consult-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="consult-phone">Phone / WhatsApp</label>
+                  <input id="consult-phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+                <div class="field">
+                  <label for="consult-interest">What Are You Interested In?</label>
+                  <select id="consult-interest" name="interest" required>
+                    <option value="">Select an area</option>
+                    <option>Educational Consultancy</option>
+                    <option>Curriculum Development</option>
+                    <option>Early Years Education</option>
+                    <option>Literacy Development</option>
+                    <option>SEND and Inclusive Education</option>
+                    <option>Staff Training</option>
+                    <option>Learner Support</option>
+                    <option>Parent and Community Learning</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="consult-support">Preferred Learning Support</label>
+                  <select id="consult-support" name="preferred-support" required>
+                    <option value="">Select a support option</option>
+                    <option>Individual Learning Support</option>
+                    <option>Group Learning</option>
+                    <option>School or Organisational Consultancy</option>
+                    <option>Professional Development</option>
+                    <option>General Enquiry</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="consult-message">Message</label>
+                  <textarea id="consult-message" name="message" rows="3" required></textarea>
+                </div>
+              </div>
+              <button class="btn btn-primary consultation-submit" type="submit">Request a Consultation</button>
+              <p class="form-note">Your details are not sent or stored yet. The enquiry service is not configured.</p>
+              <p class="form-feedback" role="alert" aria-live="polite" tabindex="-1" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-strip" aria-label="AJIS learning benefits">
+        <div class="container">
+          <p>Empowering Learners, Educators, Families, and Communities Through Meaningful Learning Experiences.</p>
+          <div class="benefits-list">
+            <span>Inclusive Learning</span>
+            <span>Educational Expertise</span>
+            <span>Personalised Support</span>
+            <span>Meaningful Learning</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">About AJIS</span>
+            <h2>Learning experiences designed to unlock <span class="highlight">potential</span>.</h2>
+            <p>
+              We partner with learners, educators, families, and organisations to make learning
+              purposeful, inclusive, and relevant to real needs.
+            </p>
+          </div>
+
+          <div class="section-action reveal">
+            <a href="about.html" class="text-link">Discover AJIS <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-wrap">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our learning solutions</span>
+            <h2>Education support that meets people where they are.</h2>
+            <p>From early learning to organisational development, our solutions respond to learners and communities.</p>
+          </div>
+
+          <div class="services-grid homepage-services reveal">
+            <article class="service-card">
+              <div class="service-number">01</div>
+              <h3>Consultancy & Curriculum</h3>
+              <p>Educational insight and purposeful learning design for schools, families, and organisations.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-number">02</div>
+              <h3>Inclusive Learner Support</h3>
+              <p>Thoughtful approaches that recognise learner strengths and diverse needs.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-number">03</div>
+              <h3>Early Years & Development</h3>
+              <p>Early learning, literacy, and professional development for educators and communities.</p>
+            </article>
+          </div>
+          <div class="section-action reveal">
+            <a href="services.html" class="btn btn-primary">Explore All Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="image-slider-wrap">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Learning in action</span>
+            <h2>Ideas and practice for <span class="highlight">learning that lasts</span>.</h2>
+          </div>
+
+          <div class="slider-shell reveal" role="region" aria-label="AJIS learning gallery" aria-roledescription="carousel" tabindex="0">
+            <div class="slider" aria-live="off">
+              <article class="slide active" role="group" aria-roledescription="slide" aria-label="1 of 8">
+                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1600&q=80" alt="Children engaging in early years learning" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Early Years Learning</h3>
+                  <p>Joyful, play-based experiences that help children build confidence, communication, and curiosity.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="2 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80" alt="Teacher guiding learners in a classroom" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Classroom Support</h3>
+                  <p>Facilitating active learning, meaningful engagement, and stronger academic confidence.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="3 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1600&q=80" alt="Educator supporting a learner with additional needs" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Inclusive Education</h3>
+                  <p>Practice-centred support that helps every learner participate, progress, and belong.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="4 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80" alt="Educator delivering a training workshop" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Professional Capacity Building</h3>
+                  <p>Practical training that supports educators and schools in delivering stronger outcomes.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="5 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80" alt="Parents and educators collaborating on learning" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Family and School Partnership</h3>
+                  <p>Collaborative approaches that turn learning goals into everyday progress and confidence.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="6 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=80" alt="Learner reading and developing literacy" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Literacy and Development</h3>
+                  <p>Reading, language, and engagement strategies that unlock joy and independence.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="7 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80" alt="Educational leadership meeting for curriculum planning" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Leadership and Curriculum</h3>
+                  <p>Strategic planning that strengthens learning systems, practice, and continuous improvement.</p>
+                </div>
+              </article>
+
+              <article class="slide" role="group" aria-roledescription="slide" aria-label="8 of 8" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80" alt="Diverse group of learners engaged in educational activities" />
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                  <h3>Engaged Learning Communities</h3>
+                  <p>Inclusive, vibrant classroom experiences where learners feel seen, supported, and motivated.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="slider-controls" aria-label="Slider navigation">
+              <button class="slider-btn prev" type="button" aria-label="Previous slide">←</button>
+              <button class="slider-btn next" type="button" aria-label="Next slide">→</button>
+              <button class="slider-btn pause" type="button" aria-label="Pause slideshow" aria-pressed="false">Ⅱ</button>
+            </div>
+          </div>
+
+          <div class="slider-dots" role="group" aria-label="Choose a gallery slide">
+            <button type="button" class="active" aria-label="Go to slide 1" aria-pressed="true"></button>
+            <button type="button" aria-label="Go to slide 2" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 3" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 4" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 5" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 6" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 7" aria-pressed="false"></button>
+            <button type="button" aria-label="Go to slide 8" aria-pressed="false"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Our approach</span>
+            <h2>Learning that is thoughtful, inclusive, and <span class="highlight">built around people</span>.</h2>
+          </div>
+          <p class="approach-copy reveal">
+            Inclusive in practice. Learner-centred in design. Collaborative in delivery.
+            Informed by educational expertise and focused on meaningful outcomes.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <h3>Let’s talk about your learning goals.</h3>
+              <p>Connect with AJIS to explore the right support for your learner, team, or community.</p>
+            </div>
+            <a href="#consultation" class="btn btn-primary">Book a Consultation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand footer-brand" aria-label="AJIS Learning Solutions brand">
+              <span class="brand-text">
+                <strong>AJIS Learning</strong>
+                <span>Solutions</span>
+              </span>
+            </div>
+            <p class="footer-description">
+              Igniting Minds, Empowering Futures — building inclusive, confident, and thriving learning communities.
+            </p>
+          </div>
+
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="founder.html">Founder</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="tuition-registration.html">Tuition Registration</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Get in Touch</h4>
+            <ul>
+              <li><a href="contact.html">Visit our contact page</a></li>
+              <li><a href="#consultation">Request a consultation</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <span>© <span id="current-year"></span> AJIS Learning Solutions</span>
+          <span>Designed for inclusive education and meaningful growth.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Register for AJIS Learning Solutions tuition and educational support services." />
+    <title>Tuition Registration | AJIS Learning Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="registration-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="AJIS Learning Solutions home">
+          <span class="brand-text">
+            <strong>AJIS Learning</strong>
+            <span>Solutions</span>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="founder.html">Founder</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="index.html#consultation">Book a Consultation</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main class="page-shell" id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-content reveal">
+            <span class="eyebrow">Tuition registration</span>
+            <h1>Begin a learning journey designed around your child’s potential.</h1>
+            <p class="hero-copy">
+              Register today for a personalised educational support plan that nurtures confidence, academic progress, and long-term growth.
+            </p>
+            <div class="btn-row">
+              <a href="contact.html" class="btn btn-primary">Get Started</a>
+              <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Tuition registration visual">
+            <div class="hero-card large">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80" alt="Group of learners engaged in educational activity" />
+            </div>
+            <div class="hero-card small-top">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80" alt="Teacher assisting learners" />
+            </div>
+            <div class="hero-card small-bottom">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Learner reading" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container contact-grid reveal">
+          <div class="contact-card">
+            <span class="eyebrow">How it works</span>
+            <h3>Simple steps to get started</h3>
+            <ul class="contact-list">
+              <li><strong>1.</strong> Share your child’s details and learning needs.</li>
+              <li><strong>2.</strong> Speak with our team about goals and support areas.</li>
+              <li><strong>3.</strong> Receive a tailored programme and registration plan.</li>
+              <li><strong>4.</strong> Begin learning with regular guidance and encouragement.</li>
+            </ul>
+          </div>
+
+          <form class="contact-form">
+            <div class="section-heading form-heading">
+              <span class="eyebrow">Registration form</span>
+              <h2>Tell us about your learner</h2>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="parent-name">Parent / Guardian Name</label>
+                <input id="parent-name" name="parent-name" type="text" autocomplete="name" placeholder="Your full name" required />
+              </div>
+
+              <div class="field">
+                <label for="child-name">Learner Name</label>
+                <input id="child-name" name="child-name" type="text" placeholder="Learner's name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number" required />
+              </div>
+
+              <div class="field full">
+                <label for="level">Current Learning Level</label>
+                <select id="level" name="level" required>
+                  <option value="">Select a level</option>
+                  <option>Early Years</option>
+                  <option>Primary School</option>
+                  <option>Secondary School</option>
+                  <option>University / Tertiary</option>
+                  <option>Professional Development</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="learning-area">Learning Area</label>
+                <select id="learning-area" name="learning-area" required>
+                  <option value="">Select an area</option>
+                  <option>Early Years Education</option>
+                  <option>Literacy Development</option>
+                  <option>Inclusive Education</option>
+                  <option>Curriculum and Learning Design</option>
+                  <option>Other Learning Support</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="support">Support Needed</label>
+                <textarea id="support" name="support" placeholder="Tell us what support your learner needs, such as literacy, numeracy, exam preparation, or inclusive learning support." required></textarea>
+              </div>
+            </div>
+
+            <div class="btn-row form-actions">
+              <button type="submit" class="btn btn-primary">Submit Registration</button>
+            </div>
+            <p class="form-note">The registration service is not configured. Your details will not be sent or stored.</p>
+            <p class="form-feedback" role="alert" aria-live="polite" tabindex="-1" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand footer-brand" aria-label="AJIS Learning Solutions brand">
+              <span class="brand-text">
+                <strong>AJIS Learning</strong>
+                <span>Solutions</span>
+              </span>
+            </div>
+            <p class="footer-description">Igniting Minds, Empowering Futures. Inclusive learning support for people and communities.</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="founder.html">Founder</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="tuition-registration.html">Tuition Registration</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div><h4>Consultations</h4><ul><li><a href="index.html#consultation">Book a consultation</a></li><li><a href="services.html">Explore services</a></li></ul></div>
+        </div>
+        <div class="footer-meta">
+          <span>© <span id="current-year"></span> AJIS Learning Solutions</span>
+          <span>Supporting each learner with care.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

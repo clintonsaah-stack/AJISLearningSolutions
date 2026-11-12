@@ -26,7 +26,7 @@ Upload AJIS branding and photographs to `assets/images/`. This is a static HTML 
 | Asset path | Website placement |
 | --- | --- |
 | `assets/images/branding/ajis-logo.jpg` | Uploaded AJIS logo for the navigation, footer, and browser tab |
-| `assets/images/founder/itoro-akie.jpg` | Founder portrait on About, Home, and Founder |
+| `assets/images/founder/itoro-akie.jpg` | Founder portrait on the dedicated Founder page |
 | `assets/images/homepage/hero-poster.jpg` | Homepage video poster and image fallback; a working version is included |
 | `assets/images/homepage/students-laptops-poster.jpg`, `students-headphones-poster.jpg`, and `students-socialising-poster.jpg` | Local poster fallbacks for the additional homepage video scenes |
 | `assets/images/website-updates/WhatsApp Image 2026-11-07 at 11.13.24 PM.jpeg` | Planning materials on Home, Services, Training & Development, and the gallery |
@@ -52,10 +52,40 @@ python3 -m http.server 8000 --bind 0.0.0.0
 
 Then open `http://localhost:8000`. In Codespaces, make port `8000` public in the Ports panel to share the forwarded HTTPS preview link.
 
-The enquiry forms currently have no submission endpoint. They validate entries in the browser and clearly report that details are not sent or stored; there is no success-shaped fallback. To enable submissions, configure a secure HTTPS endpoint using the `data-endpoint` attribute on the form. Never put service-role keys or other secrets in frontend files.
+### Enquiry email integration
+
+The contact, tuition registration, and consultation forms submit by AJAX to FormSubmit at `https://formsubmit.co/ajax/ajis.tuition@gmail.com`. Emails use the subject `AJIS LEARNING SOLUTIONS — NEW ENQUIRY` and FormSubmit's table template, with the enquiry category, visitor details, programme of interest, message, submission date, and privacy acknowledgement. No Cloudflare Worker, Resend account, API key, or other private credential is required. The separate WhatsApp contact button remains optional and is never opened by form submission.
+
+FormSubmit requires a one-time recipient activation before it forwards enquiries to the inbox:
+
+1. Submit a non-sensitive test enquiry from the website.
+2. Open the activation email sent by FormSubmit to `ajis.tuition@gmail.com` and click its activation link.
+3. Submit a second test enquiry and verify the formatted message arrives in the AJIS inbox.
+4. Only after that real test succeeds should the site be described as active for email delivery.
+
+The form displays a sending state and reports success only when the AJAX response is successful and FormSubmit indicates acceptance. This confirms service acceptance, not delivery to or reading of the inbox. Failed requests display an error and do not open WhatsApp or an email application.
+
+### Local website assistant and gallery
+
+The floating assistant is a local FAQ based on published website content. It does not connect to an AI backend, ask visitors to sign in, or send questions to a server. The homepage gallery shows five AJIS learning photos with manual controls and pauses automatically for reduced-motion preferences.
+
+## GitHub Pages deployment
+
+The public repository is `clintonsaah-stack/AJISLearningSolutions`, and its default branch is `main`. The expected project-site URL is:
+
+`https://clintonsaah-stack.github.io/AJISLearningSolutions/`
+
+The existing [Pages workflow](.github/workflows/deploy-pages.yml) runs on pushes to `main` and uploads the repository root (`.`). To enable it:
+
+1. Open the repository on GitHub and choose **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**. The workflow already handles deployment; no build command or custom build output directory is needed.
+3. After an approved change is pushed to `main`, check the **Actions** tab for the “Deploy website to GitHub Pages” run. You can also use its **Run workflow** option and select `main`.
+4. Once deployment completes, open the project-site URL above.
+
+The ten pages use relative links and assets, so they work beneath the project-site path without hard-coded domain-root paths. The homepage is `/`; the other pages are available as `about.html`, `services.html`, `learning-solutions.html`, `training-development.html`, `founder.html`, `tuition-registration.html`, `contact.html`, `privacy.html`, and `terms.html` beneath the project-site URL. If the site is unavailable, confirm the Pages source setting and check for a successful workflow run.
 
 ## Cloudflare Pages
 
 This repository is a static HTML/CSS/JavaScript site and has no `package.json`, Vite app, or build step. For a direct Cloudflare Pages deployment, connect the repository and use the `main` branch, leave the build command empty, and set the output directory to `.` (the repository root). A Cloudflare account with permission to create or connect Pages projects is required; this workspace does not have deployment authorization configured.
 
-Before publishing, provide verified AJIS contact details, replace any stock imagery with approved brand imagery as appropriate, connect and test the form endpoint, and have the draft privacy and terms pages reviewed and finalized.
+Before publishing, complete and test FormSubmit activation and have the draft privacy and terms pages reviewed and finalized.

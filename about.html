@@ -1,203 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn about AJIS Learning Solutions and our mission to empower learners, educators, and communities through inclusive education." />
-    <title>About | AJIS Learning Solutions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn about AJIS Learning Solutions, our mission, vision and inclusive approach to education." />
+    <meta name="theme-color" content="#0b1730" />
+    <title>About Us | AJIS Learning Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" data-image-key="otherWebsiteImages.logo" />
+    <link rel="stylesheet" href="styles.css?v=photo-refresh-1" />
+    <script src="assets/js/image-config.js?v=photo-refresh-1" defer></script>
+    <script src="script.js?v=photo-refresh-1" defer></script>
   </head>
-  <body class="about-page">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container navbar">
-        <a href="index.html" class="brand" aria-label="AJIS Learning Solutions home">
-          <span class="brand-text">
-            <strong>AJIS Learning</strong>
-            <span>Solutions</span>
-          </span>
-        </a>
-
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="founder.html">Founder</a>
-          <a href="contact.html">Contact</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <a class="brand" href="index.html" aria-label="AJIS Learning Solutions home"><img class="brand-logo" data-image-key="otherWebsiteImages.logo" alt="AJIS Learning Solutions logo" /><span class="brand-name"><strong>AJIS Learning</strong><span>Solutions</span></span></a>
+        <nav class="main-nav" aria-label="Main navigation" hidden>
+          <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Our Services</a><a href="learning-solutions.html">Learning Solutions</a><a href="training-development.html">Training</a><a href="founder.html">Founder</a><a href="contact.html">Contact</a><a href="tuition-registration.html">Tuition &amp; Registration</a><a class="nav-cta" href="index.html#consultation">Book a Consultation</a>
         </nav>
-
-        <a class="nav-cta" href="index.html#consultation">Book a Consultation</a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       </div>
     </header>
-
-    <main class="page-shell" id="main-content">
+    <main id="main-content">
       <section class="page-hero">
-        <div class="container">
-          <div class="hero-content reveal">
-            <span class="eyebrow">Who we are</span>
-            <h1>Learning that is <span class="highlight">inclusive</span>, transformational, and deeply human.</h1>
-            <p class="hero-copy">
-              At AJIS Learning Solutions, we help learners, educators, and families build meaningful educational experiences rooted in confidence, equity, and excellence.
-            </p>
-            <div class="btn-row">
-              <a href="services.html" class="btn btn-primary">Discover Our Services</a>
-              <a href="contact.html" class="btn btn-secondary">Speak With Us</a>
-            </div>
+        <div class="container page-hero__layout">
+          <div class="page-hero__copy reveal">
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">About Us</span></nav>
+            <span class="eyebrow">Who We Are</span>
+            <h1>Learning That Is <span class="heading-accent">Inclusive</span>, Purposeful And Deeply Human.</h1>
+            <p>AJIS Learning Solutions partners with people and organisations to create meaningful educational experiences that recognise strengths and support growth.</p>
+            <a class="btn btn-primary" href="services.html">Explore Our Services <span aria-hidden="true">→</span></a>
           </div>
+          <div class="page-hero__image reveal"><img src="assets/images/website-updates/classroom-learning-unsplash.jpg" data-image-key="about.learningCommunity" alt="Two learners writing together at a shared table" fetchpriority="high" /></div>
+        </div>
+      </section>
 
-          <div class="hero-visual reveal" aria-label="AJIS Learning Solutions about image">
-            <div class="hero-card large">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Educators collaborating in a learning workshop" />
-            </div>
-            <div class="hero-card small-top">
-              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Learner reading and learning" />
-            </div>
-            <div class="hero-card small-bottom">
-              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=700&q=80" alt="Teacher supporting a student" />
-            </div>
+      <section class="section">
+        <div class="container split-layout reveal">
+          <div class="split-copy">
+            <span class="eyebrow">Our Story</span>
+            <h2>Education Shaped By Purpose, Possibility And People.</h2>
+            <p>AJIS Learning Solutions is an educational consultancy supporting learners, parents, educators, schools, organisations and communities.</p>
+            <p>Our work brings educational expertise and practical support together to create meaningful learning experiences that recognise strengths and support growth.</p>
+            <a class="text-link" href="founder.html">Meet Our Founder <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="split-image founder-placeholder founder-image-slot" role="img" aria-label="Itoro-Obong Akie, Founder of AJIS Learning Solutions">
+            <img class="founder-photo" data-image-key="founder.portrait" alt="Itoro-Obong Akie, Founder of AJIS Learning Solutions" loading="lazy" />
+            <span class="founder-placeholder__monogram" aria-hidden="true">IA</span>
           </div>
         </div>
       </section>
 
-      <section class="content-section">
-        <div class="container grid-2 reveal">
-          <div class="section-text">
-            <span class="eyebrow">Our story</span>
-            <h2>Education shaped by purpose, possibility, and people.</h2>
-            <p>
-              AJIS Learning Solutions is an educational consultancy supporting learners, educators, parents, schools, organisations, and communities. Its work brings together educational expertise and practical support to create meaningful learning experiences.
-            </p>
-            <p>
-              The consultancy focuses on educational guidance, curriculum and learning design, early years education, literacy, inclusive practice, staff development, and learner support.
-            </p>
-          </div>
-
-          <div class="image-panel">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" alt="Teacher guiding learners in a supportive environment" />
+      <section class="section section--mist">
+        <div class="container">
+          <div class="section-heading section-heading--stacked reveal"><span class="eyebrow">Our Purpose</span><h2>Our Mission And Vision.</h2><p>These commitments guide how AJIS works with learners, families, educators and communities.</p></div>
+          <div class="values-grid values-grid--two">
+            <article class="value-card reveal"><span class="eyebrow">Our Mission</span><h3>Inspire Confidence. Unlock Potential.</h3><p>To inspire confidence, unlock potential and create meaningful learning experiences that lead to lasting success.</p></article>
+            <article class="value-card reveal"><span class="eyebrow">Our Vision</span><h3>A Trusted Educational Partner.</h3><p>To be a trusted educational partner that transforms learning, develops capability and supports meaningful educational outcomes.</p></article>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="section">
+        <div class="container split-layout split-layout--reverse reveal">
+          <div class="split-copy">
+            <span class="eyebrow">What We Believe</span>
+            <h2>Learning Should Be Inclusive, Purposeful And Empowering.</h2>
+            <p>We believe meaningful learning begins by recognising people’s strengths, understanding their needs and creating space for progress.</p>
+            <p>Collaboration between learners, families and educators helps make support relevant and lasting.</p>
+          </div>
+          <div class="split-image"><img class="image-focus-upper" src="assets/images/website-updates/WhatsApp Image 2026-11-07 at 11.31.39 PM.jpeg" data-image-key="about.learningSupport" alt="Teen learner writing in a notebook at a desk" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section class="section">
         <div class="container">
-          <div class="two-column-grid reveal">
-            <article class="info-card">
-              <span class="eyebrow">Our mission</span>
-              <h3>Inspire confidence and unlock potential</h3>
-              <p>To Inspire Confidence, Unlock Potential, and Create Meaningful Learning Experiences That Lead to Lasting Success.</p>
-            </article>
-            <article class="info-card">
-              <span class="eyebrow">Our vision</span>
-              <h3>A trusted educational partner</h3>
-              <p>To Be a Trusted Educational Partner That Transforms Learning, Develops Capability, and Creates Opportunities for Individuals and Communities to Thrive.</p>
-            </article>
-            <article class="info-card">
-              <span class="eyebrow">Our philosophy</span>
-              <h3>Learning with purpose</h3>
-              <p>We value inclusive, learner-centred and collaborative practice that responds to real needs and supports meaningful outcomes.</p>
-            </article>
-            <article class="info-card">
-              <span class="eyebrow">Who we support</span>
-              <h3>People and learning communities</h3>
-              <p>Learners, parents, educators, schools, organisations, and communities.</p>
-            </article>
+          <div class="section-heading section-heading--stacked reveal"><span class="eyebrow">Who We Support</span><h2>Learning Communities Are Stronger Together.</h2><p>AJIS works with people and organisations across the learning community.</p></div>
+          <div class="audience-grid">
+            <article class="audience-card reveal"><h3>Learners</h3><p>Confidence, skills and a positive relationship with learning.</p></article>
+            <article class="audience-card reveal"><h3>Families</h3><p>Practical guidance and clear learning pathways.</p></article>
+            <article class="audience-card reveal"><h3>Educators</h3><p>Professional learning and strategies for practice.</p></article>
+            <article class="audience-card reveal"><h3>Schools &amp; Communities</h3><p>Inclusive practice and educational support shaped for context.</p></article>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="section section--mist">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">What drives us</span>
-            <h2>The values behind every <span class="highlight">learning experience</span>.</h2>
-          </div>
-
-          <div class="feature-grid reveal">
-            <article class="feature-card">
-              <div class="feature-icon">✦</div>
-              <h3>Inclusivity</h3>
-              <p>We create welcoming learning experiences that meet diverse needs and honour each learner's strengths and aspirations.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon">◎</div>
-              <h3>Excellence</h3>
-              <p>We are committed to quality guidance, thoughtful practice, and educational experiences that produce real progress.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon">▣</div>
-              <h3>Partnership</h3>
-              <p>We believe lasting growth comes through collaborative effort between learners, families, educators, and communities.</p>
-            </article>
+          <div class="section-heading section-heading--stacked reveal"><span class="eyebrow">Why Choose AJIS Learning Solutions</span><h2>Thoughtful Support, Grounded In Learning.</h2></div>
+          <div class="values-grid">
+            <article class="value-card reveal"><h3>Expertise With Purpose</h3><p>Educational consultancy, learning design and development shaped around meaningful goals.</p></article>
+            <article class="value-card reveal"><h3>Inclusive By Approach</h3><p>Support that recognises different needs, strengths and learning contexts.</p></article>
+            <article class="value-card reveal"><h3>Built On Partnership</h3><p>Working alongside learners, families, educators and communities to support progress.</p></article>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <div class="two-column-grid reveal">
-            <article class="info-card">
-              <h3>For Learners</h3>
-              <p>We help learners build confidence, improve skills, and develop a healthier relationship with learning.</p>
-            </article>
-            <article class="info-card">
-              <h3>For Families</h3>
-              <p>We provide trusted guidance, practical support, and clear pathways that help families feel informed and supported.</p>
-            </article>
-            <article class="info-card">
-              <h3>For Educators</h3>
-              <p>We support professional development and sustainable learning strategies that strengthen teaching and outcomes.</p>
-            </article>
-            <article class="info-card">
-              <h3>For Schools</h3>
-              <p>We help build stronger educational systems, inclusive classroom practice, and more effective learning support.</p>
-            </article>
-          </div>
-        </div>
+      <section class="section section--compact">
+        <div class="container cta-panel reveal"><div><span class="eyebrow">Work with AJIS</span><h2>Let’s Create More Meaningful Learning.</h2><p>Explore the services and support that fit your goals.</p></div><a class="btn btn-light" href="contact.html">Start a Conversation <span aria-hidden="true">→</span></a></div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <div class="brand footer-brand" aria-label="AJIS Learning Solutions brand">
-              <span class="brand-text">
-                <strong>AJIS Learning</strong>
-                <span>Solutions</span>
-              </span>
-            </div>
-            <p class="footer-description">Igniting Minds, Empowering Futures. Inclusive learning support for people and communities.</p>
-          </div>
-          <div>
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="founder.html">Founder</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Support</h4>
-            <ul>
-              <li><a href="tuition-registration.html">Tuition Registration</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms and Conditions</a></li>
-            </ul>
-          </div>
-          <div><h4>Get in Touch</h4><ul><li><a href="contact.html">Visit our contact page</a></li><li><a href="index.html#consultation">Request a consultation</a></li></ul></div>
-        </div>
-        <div class="footer-meta">
-          <span>© <span id="current-year"></span> AJIS Learning Solutions</span>
-          <span>Inclusive learning, meaningful growth.</span>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <footer class="site-footer"><div class="container"><div class="footer-main">
+      <div><a class="brand footer-brand" href="index.html"><img class="brand-logo" data-image-key="otherWebsiteImages.logo" alt="AJIS Learning Solutions logo" /><span class="brand-name"><strong>AJIS Learning</strong><span>Solutions</span></span></a><p class="footer-about">Igniting Minds, Empowering Futures. Inclusive learning support for people and communities.</p></div>
+      <div class="footer-column"><h2>Discover AJIS</h2><ul><li><a href="about.html">About AJIS</a></li><li><a href="founder.html">Our Founder</a></li><li><a href="services.html">Our Services</a></li></ul></div>
+      <div class="footer-column"><h2>Learning</h2><ul><li><a href="learning-solutions.html">Learning Solutions</a></li><li><a href="training-development.html">Training &amp; Development</a></li><li><a href="tuition-registration.html">Tuition &amp; Registration</a></li></ul></div>
+      <div class="footer-column"><h2>Information</h2><ul><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+    </div><div class="footer-bottom"><p>© <span data-current-year></span> AJIS Learning Solutions</p><p>Designed for brighter learning futures.</p></div></div></footer>
   </body>
 </html>

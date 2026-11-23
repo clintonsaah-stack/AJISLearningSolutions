@@ -108,7 +108,7 @@
             </a>
           </article>
 
-          <!-- WHATSAPP CONTACT CARD -->
+          <!-- WHATSAPP -->
           <article class="contact-channel-card">
             <h3>WhatsApp</h3>
             <p>Open a professionally prepared message to AJIS.</p>
@@ -184,7 +184,7 @@
             </p>
 
             <p class="form-note">
-              The email address shown is the confirmed AJIS contact address. FormSubmit activation and a successful test are required before email delivery can be considered active.
+              Use this form to prepare your enquiry and send it directly to AJIS through WhatsApp.
             </p>
           </div>
 
@@ -193,21 +193,10 @@
             <h2>Send An Enquiry</h2>
 
             <p class="form-card__intro">
-              Submitting sends your enquiry through FormSubmit for forwarding to AJIS. One-time recipient activation is required before enquiries can reach the inbox.
+              Complete the fields below. When you submit, WhatsApp will open with your enquiry ready to send to AJIS.
             </p>
 
-            <form action="https://formsubmit.co/ajax/ajis.tuition@gmail.com" method="POST" data-enquiry-form>
-
-              <input type="hidden" name="_subject" value="AJIS LEARNING SOLUTIONS — NEW ENQUIRY" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="submission-date" value="" />
-
-              <div class="form-honeypot" aria-hidden="true">
-                <label for="contact-website">
-                  Leave this field empty
-                  <input id="contact-website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
-                </label>
-              </div>
+            <form id="ajis-whatsapp-enquiry-form">
 
               <div class="form-grid">
 
@@ -267,7 +256,7 @@
                 <div class="field field--full field--consent">
                   <label for="contact-consent">
                     <input id="contact-consent" name="consent" type="checkbox" value="Yes" required />
-                    I have read the <a href="privacy.html">Privacy Policy</a> and consent to submit these details to AJIS via FormSubmit.
+                    I have read the <a href="privacy.html">Privacy Policy</a> and consent to share these enquiry details with AJIS through WhatsApp.
                   </label>
                 </div>
 
@@ -275,15 +264,15 @@
 
               <div class="form-actions">
                 <button class="btn btn-primary" type="submit">
-                  Submit Enquiry <span aria-hidden="true">→</span>
+                  Continue to WhatsApp <span aria-hidden="true">→</span>
                 </button>
               </div>
 
               <p class="form-note">
-                FormSubmit requires AJIS to complete a one-time email activation before enquiries can reach the inbox. Do not include sensitive information. WhatsApp remains available separately.
+                WhatsApp will open with your enquiry filled in. Please review the message and tap Send in WhatsApp. Do not include sensitive personal or confidential information.
               </p>
 
-              <p class="form-feedback" role="alert" aria-live="polite" tabindex="-1" hidden></p>
+              <p class="form-feedback" id="whatsapp-form-feedback" role="status" aria-live="polite" tabindex="-1" hidden></p>
 
             </form>
           </div>
@@ -344,7 +333,6 @@
               </a>
             </li>
 
-            <!-- FOOTER WHATSAPP LINK -->
             <li>
               <a
                 class="footer-contact-link"
@@ -415,6 +403,72 @@
 
     </div>
   </footer>
+
+  <!-- WHATSAPP ENQUIRY FORM -->
+  <script>
+    (() => {
+      const form = document.getElementById("ajis-whatsapp-enquiry-form");
+      if (!form) return;
+
+      const feedback = document.getElementById("whatsapp-form-feedback");
+      const submitButton = form.querySelector('button[type="submit"]');
+      const whatsappNumber = "447882665968";
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        const value = (id) => {
+          const field = document.getElementById(id);
+          return field ? field.value.trim() : "";
+        };
+
+        const fullName = value("contact-name");
+        const email = value("contact-email") || "Not provided";
+        const phone = value("contact-phone") || "Not provided";
+        const category = value("contact-topic");
+        const programme = value("contact-programme");
+        const subject = value("contact-subject");
+        const message = value("contact-message");
+
+        const enquiry = [
+          "Hello AJIS Learning Solutions,",
+          "I would like to make an enquiry. Please find my details below:",
+          "",
+          "FULL NAME: " + fullName,
+          "EMAIL: " + email,
+          "PHONE / WHATSAPP: " + phone,
+          "ENQUIRY CATEGORY: " + category,
+          "PROGRAMME OF INTEREST: " + programme,
+          "SUBJECT: " + subject,
+          "MESSAGE:",
+          message,
+          "",
+          "Thank you."
+        ].join("\n");
+
+        const whatsappUrl =
+          "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(enquiry);
+
+        if (feedback) {
+          feedback.hidden = false;
+          feedback.textContent =
+            "WhatsApp is opening with your completed enquiry. Please review the message and tap Send to deliver it to AJIS.";
+        }
+
+        // Open WhatsApp directly from the submit action.
+        // The visitor must tap Send inside WhatsApp.
+        const whatsappWindow = window.open(whatsappUrl, "_blank");
+
+        if (whatsappWindow) {
+          whatsappWindow.opener = null;
+        } else {
+          window.location.href = whatsappUrl;
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
